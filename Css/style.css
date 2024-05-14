@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+}
+
+.contenedor {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    display: flex;
+    height: 50%;
+}
+
+.contenedor1, .contenedor2, .contenedor3 {
+   width: 50%;
+}
+
+.contenedor1 {
+    background: hsl(31, 77%, 52%);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.contenedor2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.contenedor3 {
+    background:hsl(179, 100%, 13%);
+    border-radius: 0px 20px 20px 0px;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+}
+
+.mayor1, .mayor2,.mayor3 {
+    margin-left: 20px;
+    margin-top: 40px;
+    display: inline-grid;
+    row-gap: 45px;
+    margin-right: 45px;
+}
+
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background: hsla(0, 0%, 100%, 0.75);
+    border-style: none;
+    border-radius: 20px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+.mayor1 > button {
+    color: hsl(31, 77%, 52%);
+}
+
+.mayor2 > button {
+    color: hsl(184, 100%, 22%);
+}
+
+.mayor3 > button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media(max-width:1440px)  {
+    
+
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        height: auto;
+        top: 100%;
+        width: 80%;
+        
+    }
+
+    .contenedor1,.contenedor2,.contenedor3 {
+        width: auto;
+        padding-bottom: 40px;
+    }
+    .contenedor1 {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .contenedor3 {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    }
